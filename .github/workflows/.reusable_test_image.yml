@@ -20,6 +20,7 @@ jobs:
   build-test-image:
     name: Build test image
     runs-on: ${{ vars.RUNS_ON }}
+    timeout-minutes: 15
     outputs:
       image: ${{ steps.build-and-save.outputs.image }}
 
